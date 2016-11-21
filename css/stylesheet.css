@@ -52,6 +52,10 @@ a:hover {
   color: #757373;
 }
 
+a:visited {
+  color: #A3A3A3;
+}
+
 #meshot {
   width: 20%;
   float: left;

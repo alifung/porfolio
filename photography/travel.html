@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Alexandra Fung</title>
+    <link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+
+    <link rel="stylesheet" type="text/css" media="screen" href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.css" />
+
+  </head>
+
+<body>
+
+  <div><h1>ALI FUNG</h1></div>
+  <hr>
+
+
+
+<!-- NAV BAR -->
+  <div id ="nav">
+    <ul>
+       <li><a href="../about.html">About</a></li>
+      <li>Graphic Design</li>
+      <div class="navitems">
+        <li><a href="../graphicDesign/ad.html">Advertisement</a></li>
+        <li><a href="../graphicDesign/mag.html">Print</a></li>
+        <li><a href="../graphicDesign/misc.html">Miscellaneous</a></li>
+      </div>
+
+      <li>Photography</li>
+      <div class="navitems">
+      <li><a href="edits.html">Edits</a></li>
+      <li><a href="nature.html">Nature</a></li>
+      <li><a href="people.html">People</a></li>
+      <li><a href="travel.html">Travel</a></li>
+      </div>
+      <li><a href="uxui/uxui.html">User Design/User Experience</a></li>
+    <ul>
+  </div>
+<!-- end NAV BAR -->
+
+<div class="content">
+<h2>Travel</h2>
+
+    <div class="box">
+      <div class="boxInner">
+        <img src="travel/a.jpg">
+        <div class="titleBox">1</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+        <img src="travel/b.jpg" />
+        <div class="titleBox">2</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+        <img src="travel/c.JPG" />
+        <div class="titleBox">3</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+        <img src="travel/d.jpg"/>
+        <div class="titleBox">4</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+        <img src="travel/flipped.jpg"/>
+        <div class="titleBox">5</div>
+      </div>
+    </div>
+</div>
+
+
+<!--  magazine </div>
+  <img src="advertisement/antiaginggroupw.jpg">
+  <img src="advertisement/blog3.jpg">
+  <img src="advertisement/brush.JPG">
+  <img src="advertisement/dis.jpg">
+  <img src="advertisement/labor-012.jpg">
+  <img src="advertisement/lef.jpg">
+  <img src="advertisement/prma.jpg">
+</div>
+ -->
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.pack.min.js"></script>
+<script type="text/javascript">
+    $(function($){
+        var addToAll = true;
+        var gallery = true;
+        var titlePosition = 'inside';
+        $(addToAll ? 'img' : 'img.fancybox').each(function(){
+            var $this = $(this);
+            var title = $this.attr('title');
+            var src = $this.attr('data-big') || $this.attr('src');
+            var a = $('<a href="#" class="fancybox"></a>').attr('href', src).attr('title', title);
+            $this.wrap(a);
+        });
+        if (gallery)
+            $('a.fancybox').attr('rel', 'fancyboxgallery');
+        $('a.fancybox').fancybox({
+            titlePosition: titlePosition
+        });
+    });
+</script>
+
+
+</body>
+</html>
+
+

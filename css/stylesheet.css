@@ -52,6 +52,15 @@ a:hover {
   color: #757373;
 }
 
+#meshot {
+  width: 20%;
+  float: left;
+}
+.altcont {
+  padding-left: 20%;
+  margin-left: 30px;
+}
+
 a.fancybox:hover img {
   opacity: 0.7;
   transition: all 0.5s ease;
